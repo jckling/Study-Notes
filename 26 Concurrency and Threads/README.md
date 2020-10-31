@@ -45,13 +45,13 @@ parser.add_option('-a', '--argv',      default='',
 parser.add_option('-L', '--loadaddr',  default=1000,       help='address where to load code',       action='store',      type='int',    dest='loadaddr')
 # 地址空间大小，默认为 128 KB
 parser.add_option('-m', '--memsize',   default=128,        help='size of address space (KB)',       action='store',      type='int',    dest='memsize')
-# 跟踪的内存地址
+# 跟踪内存地址
 parser.add_option('-M', '--memtrace',  default='',         help='comma-separated list of addrs to trace (e.g., 20000,20001)', action='store',
                   type='string', dest='memtrace')
-# 跟踪的寄存器
+# 跟踪寄存器
 parser.add_option('-R', '--regtrace',  default='',         help='comma-separated list of regs to trace (e.g., ax,bx,cx,dx)',  action='store',
                   type='string', dest='regtrace')
-# 是否跟踪条件语句
+# 跟踪条件
 parser.add_option('-C', '--cctrace',   default=False,      help='should we trace condition codes',  action='store_true', dest='cctrace')
 # 输出额外状态
 parser.add_option('-S', '--printstats',default=False,      help='print some extra stats',           action='store_true', dest='printstats')
