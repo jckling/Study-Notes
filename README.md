@@ -2,6 +2,9 @@
 
 ## Operating Systems: Three Easy Pieces
 
+实验环境
+- Ubuntu 18.04.5
+
 在线电子书
 - [Operating Systems: Three Easy Pieces](http://pages.cs.wisc.edu/~remzi/OSTEP/)
 - [操作系统导论](http://pages.cs.wisc.edu/~remzi/OSTEP/Chinese/)
