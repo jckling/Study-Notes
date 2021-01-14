@@ -1,0 +1,13 @@
+version: "3"
+services:
+  db:
+    image: mysql:latest
+    container_name: mysql
+    restart: always
+    environment: 
+      - MYSQL_ROOT_PASSWORD=password
+      - MYSQL_DATABASE=test
+    ports:
+      - 3306:3306
+    volumes:
+      - ~/test/MySQL Crash Course/mysql_scripts:/home # 主机:容器
