@@ -1,7 +1,0 @@
-dir /a
-dir /b
-file /a/c 2
-file /a/d 2
-file /a/e 2
-file /b/f 2
-
