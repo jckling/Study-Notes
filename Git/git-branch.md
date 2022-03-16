@@ -24,7 +24,7 @@ git checkout testing
 
 创建分支，同时切换到该分支
 ```
- git checkout -b testing
+git checkout -b testing
 ```
 
 ![](https://git-scm.com/book/en/v2/images/head-to-testing.png)
