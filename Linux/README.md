@@ -292,3 +292,147 @@ ssh-copy-id user@host:port
 #or
 ssh-copy-id -i ~/.ssh/id_rsa.pub user@host
 ```
+
+## 目录操作
+
+### cd
+
+切换到根目录
+```bash
+cd /
+```
+
+切换到用户主目录 `$HOME`
+```bash 
+cd
+# or
+cd ~
+```
+
+切换到上级目录
+```bash
+cd ..
+```
+
+切换到上两级目录
+```bash
+cd ../..
+```
+
+切换到指定目录
+```bash
+cd dir
+```
+
+### ls
+
+`--color-auto`
+- 蓝色：目录
+- 绿色：可执行文件
+- 白色：一般性文件，如文本文件，配置文件等
+- 红色：压缩文件或归档文件
+- 浅蓝色：链接文件
+- 红色闪烁：链接文件存在问题
+- 黄色：设备文件
+- 青黄色：管道文件
+
+列出当前目录可见文件
+```bash
+ls
+```
+
+显示详细信息
+```bash
+ls -l
+```
+
+以可读大小显示文件大小
+```bash
+ls -lh
+```
+
+列出当前目录所有文件（包括隐藏文件）
+```bash
+ls -a
+```
+
+按修改时间排序（最近修改的在最前面）
+```bash
+ls -t
+```
+
+显示 inode 信息
+```bash
+ls -i -l
+```
+
+单列输出
+```bash
+ls -1
+```
+
+单行输出（逗号分隔）
+```bash
+ls -m
+```
+
+### tree
+
+显示第一级文件名
+```bash
+tree doop -L 1
+```
+
+显示完整的路径名称
+```bash
+tree doop -f -L 1
+```
+
+非树状结构列出
+```bash
+tree doop -i -L 1
+```
+
+### pwd
+
+显示当前工作目录的绝对路径
+```bash
+pwd
+```
+
+显示软链接文件指向的文件
+```bash
+pwd -P
+```
+
+### mkdir/rmdir
+
+创建目录
+```bash
+mkdir d
+```
+
+创建多个目录
+```bash
+mkdir d1 d2
+```
+
+创建目录及子目录
+```bash
+mkdir -p d3/d4
+```
+
+创建指定权限的目录（默认 775）
+```bash
+mkdir -m 700 d5
+```
+
+删除目录
+```bash
+rmdir d
+```
+
+删除子目录，若父目录为空，则也删除
+```bash
+rmdir -p d3/d4
+```
