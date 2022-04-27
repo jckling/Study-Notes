@@ -80,7 +80,9 @@
 
 ### Doop 指针分析工具
 
-[指针分析工具 Doop 使用指南](https://jckling.github.io/2021/12/17/Security/%E6%8C%87%E9%92%88%E5%88%86%E6%9E%90%E5%B7%A5%E5%85%B7%20Doop%20%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/)
+- [LogiQL 入门](https://jckling.github.io/2021/10/26/Other/LogiQL%20%E5%85%A5%E9%97%A8/)
+- [Datalog 引擎 Soufflé 指南](https://jckling.github.io/2021/11/22/Other/Datalog%20%E5%BC%95%E6%93%8E%20Souffl%C3%A9%20%E6%8C%87%E5%8D%97/)
+- [指针分析工具 Doop 使用指南](https://jckling.github.io/2021/12/17/Security/%E6%8C%87%E9%92%88%E5%88%86%E6%9E%90%E5%B7%A5%E5%85%B7%20Doop%20%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/)
 
 Doop 分析字节码（或 Android 的 Dex 代码），将其转换为 Jimple 中间表示，然后再转换为 .facts 文件，由 Datalog 引擎 Soufflé 加载作为输入。Datalog 从输入开始推导事实，执行终止时输出 .csv 文件作为分析结果。
 

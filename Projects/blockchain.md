@@ -127,6 +127,8 @@ HTTPS = HTTP + TLS / SSL
 
 ### X.509 证书
 
+[X.509 数字证书与 SSL/TLS](https://jckling.github.io/2020/10/12/Notes/GB/%E8%AF%81%E4%B9%A6%E7%9B%B8%E5%85%B3/)
+
 证书链
 - 根 CA：自签证书
 - 中间 CA
