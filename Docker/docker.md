@@ -534,7 +534,6 @@ EXPOSE 80/udp
 $ docker run -p 80:80/tcp -p 80:80/udp <image>
 ```
 
-
 ### USER
 
 > The `USER` instruction sets the user name (or UID) and optionally the user group (or GID) to use when running the image and for any `RUN`, `CMD` and `ENTRYPOINT` instructions that follow it in the Dockerfile.
@@ -659,7 +658,6 @@ HEALTHCHECK --interval=5m --timeout=3s \
 $ docker inspect --format '{{json .State.Health}}' <container> | python -m json.tool
 ```
 
-
 ### STOPSIGNAL
 
 > The `STOPSIGNAL` instruction sets the system call signal that will be sent to the container to exit.
@@ -678,7 +676,6 @@ STOPSIGNAL 9
 ```
 
 使用 `docker run` 和 `docker create` 的 `--stop-signal` 参数覆盖容器的的默认停止信号。
-
 
 ### 多阶段构建（multi-stage builds）
 
