@@ -10,6 +10,11 @@ git remote -v
 git pull
 ```
 
+修改上一次未推送的提交信息
+```
+git commit --amend -m "new commit message"
+```
+
 从当前 HEAD 创建并切换分支
 ```
 git checkout -b new_branch
@@ -39,3 +44,15 @@ git log --oneline --decorate
 ```
 git log --oneline --decorate --graph --all
 ```
+
+# 相关链接
+
+Git
+- [Pro Git 第二版](https://git-scm.com/book/zh/v2)
+- [A successful Git branching model](https://nvie.com/posts/a-successful-git-branching-model/)
+- [Learn Git with Bitbucket Cloud](https://www.atlassian.com/git/tutorials/learn-git-with-bitbucket-cloud)
+
+Github
+- [Github Learning Lab](https://lab.github.com/)
+- [how-to-use-github](https://github.com/xirong/my-git/blob/master/how-to-use-github.md)
+- [GitHub Cheat Sheet](https://github.com/tiimgreen/github-cheat-sheet/blob/master/README.zh-cn.md)
