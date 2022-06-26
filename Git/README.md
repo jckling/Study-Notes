@@ -35,6 +35,24 @@ git checkout -- filename
 git reset HEAD^
 ```
 
+暂存当前修改，之后可以切换分支
+
+```
+git stash
+```
+
+应用暂存的的修改
+
+```
+git stash apply
+```
+
+丢弃暂存内容
+
+```
+git stash drop
+```
+
 查看简要日志信息
 ```
 git log --oneline --decorate
